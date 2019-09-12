@@ -1,6 +1,6 @@
 
-ArrayBackedQueues/__pycache__/
+*__pycache__/
 
 *.swp
 
-ArrayBackedQueues/\.DS_Store
+*.DS_Store

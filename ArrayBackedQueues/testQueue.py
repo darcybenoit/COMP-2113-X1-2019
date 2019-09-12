@@ -2,8 +2,8 @@
 # adding to the middle, adding to the end, and deleting from all three locations.
 import Queue
 
-stackA = Queue.Queue()
-stackB = Queue.Queue()
+stackA = Queue.Queue("stackA")
+stackB = Queue.Queue("stackB")
 
 stackA.insert(0,25)
 stackA.insert(1,442)
