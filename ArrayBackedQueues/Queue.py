@@ -3,9 +3,10 @@
 # looked at the implementation of a stack.)
 
 class Queue:
-    def __init__(self):
+    def __init__(self, name):
         self.a = [0]
         self.n = 0
+        self.name = name
 
     # inserting an item into the queue at a particular location
     def insert(self,i,x): #i is index, x is value
@@ -17,12 +18,12 @@ class Queue:
         else:
             self.a[self.n] = x
         self.n += 1
-        print ("self.a = ", self.a)
+        print (self.name, self.a)
 
     # removing an item from the queue at a particular location
     def remove(self,i): #i is index
         for j in range(i,self.n-1):
-            print ("self.a = ", self.a)  # printing so we can see what is going on.
+            print (self.name, self.a)  # printing so we can see what is going on.
             self.a[j] = self.a[j+1]
         self.n -= 1
         self.a[self.n] = " "
